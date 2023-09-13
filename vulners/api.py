@@ -139,7 +139,7 @@ class Vulners(object):
         self.__api_key = api_key
 
         if api_key and not self.__validKey(api_key):
-            raise ValueError("Wrong Vulners API key. Please, follow https://vulners.com to obtain correct one.")
+            raise ValueError("Wrong Vulners API key or API key are expired. Please, follow https://vulners.com to obtain correct one.")
 
     def __adapt_response_content(self, response):
         """
